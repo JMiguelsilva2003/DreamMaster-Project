@@ -162,14 +162,42 @@ main p{
     line-height: 1.8em;
 }
 
+section{
+    width: 97vw;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+section#img1{
+    background-image: url(../imagens/img-sobre.jpg);
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.445);
+}
+
+section#img2{
+    background-image: url(../imagens/img-crt.jpg);
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.445);
+}
+
+section.dir{
+    display: flex;
+}
+
 article.imagem {
     background-color: #ececec;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 0px 10px 10px 0px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.445);
     margin: auto;
     padding: 12px;
+    width: 90vw;
 }
 
+article#crte{
+    width: 100vw;
+}
 
 aside{
     padding: 10px;
