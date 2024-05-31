@@ -1,5 +1,205 @@
 @charset "UTF-8";
 
+
+@keyframes animation {
+
+    /*from { color: #6D9DE7;}
+    to { color: #00c3ff;}*/
+    
+    0% { color: #6D9DE7;}
+    50% { color: #17d0d6;}
+    100% { color: #6D9DE7;}
+
+}
+
+@keyframes brilho{
+    0% {color: #ffffff; text-shadow: 0px 0px 12px #ffffff, 0 0 50px #fcfcfc, 0 0 100px #ffffff;}
+}
+
+
+/*
+
+1. *Azul Céu Noturno:* Um azul profundo que remete ao mistério e à profundidade dos sonhos, ideal para fundos e elementos principais.
+2. *Prata Cibernética:* Um tom metálico que evoca a tecnologia e a modernidade, perfeito para detalhes e ícones.
+3. *Verde Menta:* Uma cor refrescante e calmante, ótima para botões de ação e destaques.
+4. *Lavanda Suave:* Um roxo claro que inspira criatividade e espiritualidade, adequado para seções de conteúdo e menus.
+5. *Cinza Neutro:* Um cinza claro para equilibrar e proporcionar um visual limpo e acessível, usado em textos e áreas de informação.
+
+    color: #4A6EDB;  Azul Céu Noturno 
+    color: #A0A0A0;  Prata Cibernética
+    color: #5BD1A8;  Verde Menta 
+    background-color: #EAE6FF; Lavanda Suave
+    background-color: #F4F4F4;  Cinza Neutro 
+
+*/
+
 *{
     font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    height: 510px;
+    background-color: #010254;
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > img{
+    border-radius: 50%;
+    margin: auto;
+}
+
+header > h1{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 3em;
+    padding-top: 12px;
+    font-weight: normal;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+header > h1 > span.cor{
+    color: #6D9DE7;
+    animation-name: animation;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+.cor > span{
+    animation-name: brilho;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.cor > span:nth-of-type(2){
+    animation-delay: 0.25s;
+}
+
+.cor > span:nth-of-type(3){
+    animation-delay: 0.5s;
+}
+
+.cor > span:nth-of-type(4){
+    animation-delay: 0.75s;
+}
+
+.cor > span:nth-of-type(5){
+    animation-delay: 1s;
+}
+
+.cor > span:nth-of-type(6){
+    animation-delay: 1.25s;
+}
+
+header > p{
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 24px;
+    padding-top: 0px;
+    margin: auto;
+    margin-bottom: 0;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 344);
+}
+
+.nav{
+    position: sticky;
+    top: 0;
+
+    background-color: aqua;
+    padding: 10px;
+}
+
+nav > a{
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: white;
+    color: black;
+}
+
+main{
+    background-color: white;
+    min-width: 300px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+main h2{
+font-weight: normal;
+font-size: 1.8em;
+text-indent: 8px;
+}
+
+main h3{
+    font-weight: normal;
+    font-size: 1.4em;
+    text-indent: 8px;
+}
+
+main p{
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+
+article.imagem {
+    background-color: #ececec;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.445);
+    margin: auto;
+    padding: 12px;
+}
+
+
+aside{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.486) ;
+}
+
+aside > h3{
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+}
+
+aside > ul{
+    list-style-position: inside;
+    columns: 2; /*para dividir as colunas*/
+}
+
+footer{
+    background-color: aqua;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer > p > a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
