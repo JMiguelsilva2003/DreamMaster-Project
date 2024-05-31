@@ -35,12 +35,14 @@
 
 *{
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 header{
@@ -164,10 +166,28 @@ main p{
 
 section{
     width: 97vw;
-    background-position: center;
+    background-position: left center;
     background-repeat: no-repeat;
 
     background-attachment: fixed;
+}
+
+section#Especialistas{
+    width: 90vw;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.456);
+    background-color: #F4F4F4;
+}
+
+section#Comentarios{
+    width: 90vw;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.456);
+    background-color: #F4F4F4;
 }
 
 section#img1{
@@ -186,21 +206,30 @@ section.dir{
     display: flex;
 }
 
+article.normal{
+    padding: 8px;
+    margin: 32px;
+    background-color: #F4F4F4;
+    border-radius: 10px 10px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.445);
+}
+
 article.imagem {
     background-color: #ececec;
     border-radius: 0px 10px 10px 0px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.445);
     margin: auto;
-    padding: 12px;
+    padding: 16px;
     width: 90vw;
 }
 
 article#crte{
-    width: 100vw;
+    width: 99vw;
 }
 
 aside{
     padding: 10px;
+    margin: 32px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.486) ;
 }
