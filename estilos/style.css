@@ -47,6 +47,15 @@ body {
     transition: background 0.2s linear;
 }
 
+body section#Benefícios article section#ruim{
+    width: 70vw;
+}
+
+p{
+    padding: 16px;
+    margin: 0px;
+}
+
 div#bt-dark{
     position: fixed;
     top: 35px;
@@ -249,13 +258,13 @@ section#Comentarios{
 }
 
 section#img1{
-    background-image: url(../imagens/img-sobre.jpg);
+    background-image: url(../imagens/img1-sobre.jpg);
     border-radius: 10px 0px 0px 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.445);
 }
 
 section#img2{
-    background-image: url(../imagens/img-crt.jpg);
+    background-image: url(../imagens/img-crt-pq.jpg);
     border-radius: 10px 0px 0px 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.445);
 }
@@ -359,7 +368,7 @@ body.dark section#Benefícios{
 body.dark section#Benefícios article section#ruim{
     background-color: #121212;
     color: #ffffff;
-    width: 50vw;
+    width: 70vw;
 }
 
 body.dark section#Sobre{
