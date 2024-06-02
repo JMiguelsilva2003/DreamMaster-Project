@@ -2,8 +2,11 @@
 
 /* Telinhas pequenas */
 @media (min-width:300px) and (max-width: 600px) {
+
     body{
-        overflow-x: hidden;
+        overflow-x: visible;
+        margin: 0;
+        padding: 0;
     }
 
     i#burguer{
@@ -16,10 +19,6 @@
     i#burguer:hover{
         background-color: white;
         color: black;
-    }
-
-    #partes{
-
     }
 
     aside{
@@ -102,7 +101,7 @@
     section{
         display: block;
         margin: auto;
-        width: 99vw;
+        width: 97vw;
         padding: 0;
         margin-left: -25px;
     }
@@ -115,37 +114,82 @@
         display: none;
     }
 
-    section.dir{
-        display: block;
-        margin: auto;
-        width: 90vw;
+    div.prrx{
+        height: 67.5vw;
     }
 
-    section#Características{
-        display: flex;
-        width: 90vw;
+    section.prrx {
+        width: 97vw;
+        height: 370px;
+        margin-left: -22px;
+
+        background-image: url(../imagens/img1-sobre.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        background-attachment: fixed;
     }
 
-    section#Benefícios{
-        display: flex;
-        width: 100vw;
+    section.prrx2{
+        width: 97vw;
+        height: 370px;
+        margin-left: -22px;
+
+        background-image: url(../imagens/img-crt-cell.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+    
+        background-attachment: fixed;
     }
+
+    video{
+        height: 65vh;
+        width: 85vw;
+    }
+
+    video.vd{
+        display: flex;
+        width: 75vh;
+        object-fit: fill;
+    }
+
+    /*imagens auto*/
+
+.slider {
+    border-radius: 20px;
+}
+
+.navigation-auto,
+.navigation-manual {
+    display: flex;
+    height: 20px;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    max-width: 300px;
+    gap: 15px;
+}
+
+.navigation-manual {
+    margin-top: 190px;
+    margin-left: 90px;
+}
+
+.navigation-auto{
+    display: none;
+}
+
+.navigation-manual label {
+    border-radius: 50% 50%;
+    width: 64px;
+    height: 32px;
+}
+
 }
 
 /* Celulares maiores */
 @media (min-width: 600px) and (max-width: 768px) {
-    body{
-        overflow-x: hidden;
-    }
-
-    aside > ul{
-        list-style-position: inside;
-        text-align: justify;
-        padding: 10%;
-        margin: auto;
-
-        columns: 1; /*para dividir as colunas*/
-    }
 }
 
 

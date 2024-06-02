@@ -33,6 +33,12 @@
 
 */
 
+/*telas pequenas*/
+
+
+
+/**/
+
 *{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -405,6 +411,7 @@ div.slider img{
 }
 
 .slider{
+    border-radius: 20px;
     margin: 0 auto;
     width: 90vw;
     overflow: hidden;
