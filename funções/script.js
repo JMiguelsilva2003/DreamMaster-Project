@@ -59,3 +59,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+function clickMenu() {
+    const menu = document.getElementById("partes");
+    if (menu.style.display === "none" || menu.style.display === "") {
+        menu.style.display = "flex";
+        menu.style.flexDirection = "column";
+    } else {
+        menu.style.display = "none";
+    }
+}

@@ -6,8 +6,20 @@
         overflow-x: hidden;
     }
 
-    nav a{
-        display: none;
+    i#burguer{
+        display: block;
+        width: 45px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    i#burguer:hover{
+        background-color: white;
+        color: black;
+    }
+
+    #partes{
+
     }
 
     aside{
@@ -49,6 +61,9 @@
     }
     
     main h3{
+        font-size: 1.2em;
+        padding: 25px;
+        margin: 10px;
         font-size: 1.6em;
         text-indent: 8px;
     }
@@ -58,16 +73,69 @@
         font-size: 1.4em;
         line-height: 1.8em;
     }
+
+    ul#bnf{
+        margin: 24px;
+    }
+
+    ul#bnf li{
+        font-size: 1.2em;
+    }
+
+    #partes{
+        display: none;
+    }
+
+    div#bt-dark{
+        position: fixed;
+        top: 65px;
+        
+        margin: 20px;
+    }
+
+    /*imagens parallax*/
+
+    article.imagem{
+        border-radius: 10px;
+    }
+
+    section{
+        display: block;
+        margin: auto;
+        width: 99vw;
+        padding: 0;
+        margin-left: -25px;
+    }
+
+    section#img1{
+        display: none;
+    }
+    
+    section#img2{
+        display: none;
+    }
+
+    section.dir{
+        display: block;
+        margin: auto;
+        width: 90vw;
+    }
+
+    section#Características{
+        display: flex;
+        width: 90vw;
+    }
+
+    section#Benefícios{
+        display: flex;
+        width: 100vw;
+    }
 }
 
 /* Celulares maiores */
 @media (min-width: 600px) and (max-width: 768px) {
     body{
         overflow-x: hidden;
-    }
-
-    nav a{
-        display: none;
     }
 
     aside > ul{
@@ -86,8 +154,6 @@
     body{
         overflow-x: hidden;
     }
-
-
 }
 
 /* Desktops */
@@ -95,5 +161,5 @@
     body{
         overflow-x: hidden;
     }
-    
+
 }

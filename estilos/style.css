@@ -38,6 +38,10 @@
     box-sizing: border-box;
 }
 
+i.material-symbols-outlined{
+    display: none;
+}
+
 body {
     padding: 0px;
     margin: 0px;
@@ -190,7 +194,11 @@ header > p{
     padding: 10px;
 }
 
-nav > a{
+nav menu{
+    margin: 3px;
+}
+
+nav > menu > a{
     padding: 8px;
     border-radius: 4px;
     text-decoration: none;
@@ -198,7 +206,7 @@ nav > a{
     transition-duration: 0.5s;
 }
 
-nav > a:hover{
+nav > menu > a:hover{
     background-color: white;
     color: black;
 }
@@ -507,12 +515,12 @@ body.dark aside {
     color: #ffffff;
 }
 
-body.dark nav > a {
+body.dark nav > menu > a {
     background-color: #333333;
     color: #ffffff;
 }
 
-body.dark nav > a:hover {
+body.dark nav > menu > a:hover {
     background-color: #ffffff;
     color: #000000;
 }

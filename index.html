@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DreamMaster</title>
     <link rel="shortcut icon" href="imagens/logo-pequena.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
@@ -24,13 +25,16 @@
         <p>Mergulhe em um mundo onde a mente cria e os sonhos se tornam realidade, redefinindo a arte de dormir e sonhar com DreamMaster.</p>
     </header>
     <nav class="nav">
-        <a href="index.html">Início</a>
-        <a href="#Sobre">Sobre</a>
-        <a href="#Benefícios">Benefícios</a>
-        <a href="#Características">Características</a>
-        <a href="#Para-Voce">Para Você</a>
-        <a href="#Especialistas">Apoiadores</a>
-        <a href="#Comentarios">Comentários</a>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <menu id="partes">
+            <a href="index.html">Início</a>
+            <a href="#Sobre">Sobre</a>
+            <a href="#Benefícios">Benefícios</a>
+            <a href="#Características">Características</a>
+            <a href="#Para-Voce">Para Você</a>
+            <a href="#Especialistas">Apoiadores</a>
+            <a href="#Comentarios">Comentários</a>
+        </menu>
     </nav>
     <main>
         <section class="dir" id="Sobre">
@@ -48,7 +52,7 @@
                 <section id="ruim">
                     <div>
                         <h3>Benefícios:</h3>
-                        <ul>
+                        <ul id="bnf">
                             <li><strong>Melhoria da Qualidade do Sono:</strong> Promove um sono mais profundo e repousante, ajudando a reduzir o estresse e a ansiedade.</li>
                             <li><strong>Exploração Criativa:</strong> Permite a exploração de cenários de sonho personalizados, potencializando a criatividade e a resolução de problemas.</li>
                             <li><strong>Controle de Pesadelos:</strong> Ajuda pessoas que sofrem de pesadelos recorrentes a controlar e transformar suas experiências oníricas em algo positivo.</li>
