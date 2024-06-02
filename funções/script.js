@@ -25,3 +25,37 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// Primeira apresentação de slides
+let contagem = 1;
+document.getElementById("radio1").checked = true;
+
+setInterval(function () {
+    proximaImagem();
+}, 6000);
+
+function proximaImagem() {
+    contagem++;
+    if (contagem > 4) {
+        contagem = 1;
+    }
+    document.getElementById("radio" + contagem).checked = true;
+}
+
+
+// ler mais
+
+document.addEventListener('DOMContentLoaded', () => {
+    const readMoreBtn = document.getElementById('read-more-btn');
+    const moreContent = document.getElementById('more-content');
+
+    readMoreBtn.addEventListener('click', () => {
+        if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+            moreContent.style.display = 'block';
+            readMoreBtn.textContent = 'Ler Menos';
+        } else {
+            moreContent.style.display = 'none';
+            readMoreBtn.textContent = 'Ler Mais';
+        }
+    });
+});

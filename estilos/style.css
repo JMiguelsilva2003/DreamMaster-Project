@@ -310,6 +310,9 @@ aside > h3{
 aside > ul{
     list-style-position: inside;
     columns: 2; /*para dividir as colunas*/
+
+    padding: 5%;
+    margin: auto;
 }
 
 footer{
@@ -519,3 +522,37 @@ body.dark > header > h1 > span.cor{
     animation-name: none;
     animation-duration: 6s;
     }
+
+/*comentarios*/
+
+.video-comentario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    width: 70vw;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.486);
+    object-fit: cover;
+}
+
+#read-more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4A6EDB; /* Azul Céu Noturno */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#read-more-btn:hover {
+    background-color: #374b9c; /* Tom mais escuro do azul */
+}

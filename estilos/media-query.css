@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* Telinhas pequenas */
+@media (min-width:300px) and (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    nav a{
+        display: none;
+    }
+
+    aside{
+        width: 90vw;
+        padding: 10px;
+        margin: 0;
+        margin-top: 50px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.486) ;
+    }
+
+    aside > ul{
+        list-style-position: inside;
+        text-align: justify;
+        padding: 10%;
+        margin: auto;
+
+        columns: 1; /*para dividir as colunas*/
+    }
+
+    header{
+        height: 570px;
+    }
+
+    header > h1{
+        font-size: 3.5em;
+        text-indent: 8px;
+    }
+    
+
+    header > p{
+        font-size: 1.4em;
+    }
+    
+    
+    main h2{
+    font-size: 2em;
+    text-indent: 8px;
+    }
+    
+    main h3{
+        font-size: 1.6em;
+        text-indent: 8px;
+    }
+    
+    main p{
+        word-spacing: -1px;
+        font-size: 1.4em;
+        line-height: 1.8em;
+    }
+}
+
+/* Celulares maiores */
+@media (min-width: 600px) and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    nav a{
+        display: none;
+    }
+
+    aside > ul{
+        list-style-position: inside;
+        text-align: justify;
+        padding: 10%;
+        margin: auto;
+
+        columns: 1; /*para dividir as colunas*/
+    }
+}
+
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 992px) {
+    body{
+        overflow-x: hidden;
+    }
+
+
+}
+
+/* Desktops */
+@media (min-width: 992px) and (max-width: 1200px) {
+    body{
+        overflow-x: hidden;
+    }
+    
+}
