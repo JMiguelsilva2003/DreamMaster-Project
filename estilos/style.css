@@ -35,7 +35,18 @@
 
 /*telas pequenas*/
 
+picture {
+    display: block; 
+}
 
+    source {
+        
+    }
+    
+    .slide picture img {
+        width: 100%;
+        height: auto;
+    }
 
 /**/
 
