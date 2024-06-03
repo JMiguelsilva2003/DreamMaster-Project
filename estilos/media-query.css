@@ -4,7 +4,7 @@
 @media (min-width:300px) and (max-width: 600px) {
 
     body{
-        overflow-x: visible;
+        overflow-x: hidden;
         margin: 0;
         padding: 0;
     }
@@ -118,7 +118,7 @@
         height: 67.5vw;
     }
 
-    section.prrx {
+    section.prrx1 {
         width: 97vw;
         height: 370px;
         margin-left: -22px;
