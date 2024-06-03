@@ -403,7 +403,7 @@ section#sobre{
 /* Celulares maiores */
 @media (min-width: 600px) and (max-width: 768px) {
     body{
-        overflow-x: visible;
+        overflow-x: hidden;
         margin: 0;
         padding: 0;
     }
@@ -588,9 +588,115 @@ section#sobre{
 
 
 /* Tablets */
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 790px) {
     body{
         overflow-x: hidden;
+    }
+
+    header{
+        height: 600px;
+    }
+
+    header > h1{
+        font-size: 3.5em;
+        text-indent: 8px;
+    }
+    
+
+    header > p{
+        font-size: 1.4em;
+    }
+    
+    
+    main h2{
+    font-size: 2em;
+    text-indent: 8px;
+    }
+    
+    main h3{
+        font-size: 1.2em;
+        padding: 25px;
+        margin: 10px;
+        font-size: 1.6em;
+        text-indent: 8px;
+    }
+    
+    main p{
+        word-spacing: -1px;
+        font-size: 1.4em;
+        line-height: 1.8em;
+    }
+
+    video{
+        height: 90vh;
+        width: 85vw;
+    }
+
+    video.vd{
+        display: flex;
+        width: 55vh;
+        height: 50vh;
+        object-fit: fill;
+    }
+
+    .slider {
+        border-radius: 20px;
+    }
+    
+    .navigation-auto,
+    .navigation-manual {
+        height: 20px;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        max-width: 300px;
+        gap: 15px;
+    }
+    
+    .navigation-manual {
+        margin-top: 800px;
+        margin-left: 90px;
+    }
+    
+    .navigation-auto{
+        display: none;
+    }
+    
+    .navigation-manual label {
+        border-radius: 50% 50%;
+        width: 64px;
+        height: 32px;
+    }
+}
+
+@media (min-width: 790px) and (max-width:850){
+    body{
+        overflow-x: hidden;
+    }
+    .navigation-auto,
+    .navigation-manual {
+        display: none;
+        height: 20px;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        max-width: 300px;
+    }
+    
+    .navigation-manual {
+        display: none;
+        margin-top: 900px;
+        margin-left: 90px;
+    }
+    
+    .navigation-auto{
+        display: none;
+    }
+    
+    .navigation-manual label {
+        border-radius: 50% 50%;
+        width: 64px;
+        height: 64px;
     }
 }
 
@@ -599,5 +705,4 @@ section#sobre{
     body{
         overflow-x: hidden;
     }
-
 }
