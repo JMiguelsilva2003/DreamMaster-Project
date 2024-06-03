@@ -729,6 +729,9 @@ section#sobre{
 
 /* Desktops */
 @media (min-width: 992px) and (max-width: 1200px) {
+    header{
+        height: 570px;
+    }
     body{
         overflow-x: hidden;
     }
