@@ -198,6 +198,12 @@
 section#sobre{
     padding: 10px;
 }
+
+@media (orientation: landscape) {
+    .navigation-manual {
+        display: none;
+    }
+}
 }
 
 /* Telinhas pequenas */
@@ -397,6 +403,12 @@ label{
 section#sobre{
     padding: 10px;
 }
+
+@media (orientation: landscape) {
+    .navigation-manual {
+        display: none;
+    }
+}
 }
 
 /* Celulares maiores */
@@ -583,6 +595,12 @@ section#sobre{
     width: 64px;
     height: 32px;
 }
+
+@media (orientation: landscape) {
+    .navigation-manual {
+        display: none;
+    }
+}
 }
 
 
@@ -665,6 +683,12 @@ section#sobre{
         border-radius: 50% 50%;
         width: 64px;
         height: 32px;
+    }
+
+    @media (orientation: landscape) {
+        .navigation-manual {
+            display: none;
+        }
     }
 }
 
