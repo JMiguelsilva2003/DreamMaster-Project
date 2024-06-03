@@ -199,11 +199,18 @@ section#sobre{
     padding: 10px;
 }
 
+
 @media (orientation: landscape) {
     .navigation-manual {
         display: none;
     }
 }
+}
+/*iphone 5 e iphone se 2016*/
+@media (min-width:320px) and (max-width: 322px){
+    .navigation-manual {
+        display: none;
+    }
 }
 
 /* Telinhas pequenas */
@@ -395,9 +402,6 @@ section#sobre{
 .navigation-manual label {
     width: 200vw;
     height: 40px;
-}
-
-label{
 }
 
 section#sobre{
